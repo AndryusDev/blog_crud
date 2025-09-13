@@ -1,5 +1,5 @@
 """
-WSGI config for message_booad project.
+WSGI config for blog_crud project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'message_booad.settings')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "blog_crud.settings")
 
 application = get_wsgi_application()

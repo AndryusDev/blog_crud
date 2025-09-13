@@ -1,5 +1,5 @@
 """
-ASGI config for message_booad project.
+ASGI config for blog_crud project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'message_booad.settings')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "blog_crud.settings")
 
 application = get_asgi_application()
