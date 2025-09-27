@@ -6,8 +6,9 @@
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div>
-            <a href="{% url 'post-list' %}"><h1 class="header_titulo">BLOG PERSONAL</h1></a>
+        <div class="header">
+            <img src="{% static 'image/andryusdev_logo2.png' %}" class="logo_andryus">
+            <a href="{% url 'post-list' %}" class="titulo_enlace"><h1 class="header_titulo">BLOG PERSONAL</h1></a>
         </div>
         
         {% block content %}
