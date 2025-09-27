@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <title>Blog Personal</title>
+        <link rel="stylesheet" href="{% static 'css/blog.css' % }">
+    </head>
+    <body>
+        <a href="{% url 'post-list' %}" class="header_enlace"><h1 class="header">BLOG PERSONAL</h1></a>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
