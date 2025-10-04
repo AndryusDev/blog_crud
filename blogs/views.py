@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 from .models import Post
 from django.views.generic import ListView, DetailView
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView,UpdateView
 
 """def post_list(request):
     return render(request, 'blog.html')"""
@@ -21,4 +21,9 @@ class PostNewView(CreateView):
     model = Post
     template_name = "post_new.html"
     fields = ['title','body', 'author']
+
+class PostUpdateView(UpdateView):
+    model = Post
+    template_name = 'post_update.html'
+    fields = ['title', 'body']
     

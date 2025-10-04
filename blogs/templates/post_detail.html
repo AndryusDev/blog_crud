@@ -6,4 +6,7 @@
         <p>{{ post.author }}</p>
         <p>{{ post.body }}</p>
         <p>{{ post.created_at }}</p>
+
+        <a href="{% url 'post-update' post.id %}">Edicion</a>
+        
 {% endblock content %}
