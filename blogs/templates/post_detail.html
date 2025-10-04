@@ -8,5 +8,6 @@
         <p>{{ post.created_at }}</p>
 
         <a href="{% url 'post-update' post.id %}">Edicion</a>
+        <a href="{% url 'post-delete' post.id %}">Eliminar</a>
         
 {% endblock content %}
